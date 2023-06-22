@@ -10,5 +10,5 @@ function Singleton() {
 var obj1 = new Singleton(); // at this point new creates an empty object. it goes it then goes into the constructor function. SingleInstance is already null so it skips the first conditional and moves to the second line. it takes that empty object and give it to SingleInstance. It now holds the empty object aka that empty object is bound to SingleInstance or we can say that SIngleInstance points to that instance( which has a name now called obj1). (this is refering to that empty object). there is no explicit return of the object then js automatically does that. the new instance gets a name called obj1
 
 
-var obj2 = new Singleton();//Now we attempt to create a second instance of Singleton. But because singletonInstance is no longer null (it's obj1), the Singleton function returns singletonInstance instead of creating a new instance. So obj2 is actually the same object as singletonInstance and obj1. they are all pointing to the same object. 
+
 
